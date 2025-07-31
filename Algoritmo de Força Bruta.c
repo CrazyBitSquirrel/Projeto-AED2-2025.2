@@ -27,11 +27,11 @@ int main() {
     fgets(texto_usuario, TAMANHO_MAX_INPUT, stdin);
     texto_usuario[strcspn(texto_usuario, "\n")] = 0;
 
-    const char* palavras_para_censurar[] = {"chato", "bobo", "odeio", "terrível", "abacaxi"};
+    const char* palavras_para_censurar[] = {"chato", "bobo", "odeio", "terrivel", "abacaxi"};
     int n_palavras = sizeof(palavras_para_censurar) / sizeof(palavras_para_censurar[0]);
     int palavra_encontrada_flag = 0;
 
-    printf("\n--- Análise com Algoritmo de Força Bruta ---\n");
+    printf("\n--- Analise com Algoritmo de Forca Bruta ---\n");
     
     for (int i = 0; i < n_palavras; i++) {
         const char* palavra_atual = palavras_para_censurar[i];
