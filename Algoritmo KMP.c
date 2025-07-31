@@ -32,7 +32,7 @@ int buscarComKMP(const char* texto, const char* padrao) {
 
     int* lps = (int*)malloc(sizeof(int) * m);
     if (lps == NULL) {
-        printf("Erro de alocação de memória!\n");
+        printf("Erro de alocacao de memoria!\n");
         return 0;
     }
     
@@ -71,13 +71,13 @@ int main() {
     fgets(texto_usuario, TAMANHO_MAX_INPUT, stdin);
     texto_usuario[strcspn(texto_usuario, "\n")] = 0;
 
-    const char* palavras_para_censurar[] = {"chato", "bobo", "odeio", "terrível", "abacaxi"};
+    const char* palavras_para_censurar[] = {"chato", "bobo", "odeio", "terrivel", "abacaxi"};
     int n_palavras = sizeof(palavras_para_censurar) / sizeof(palavras_para_censurar[0]);
     
  
     int encontrou_alguma_palavra = 0;
 
-    printf("\n--- Análise com Algoritmo KMP ---\n");
+    printf("\n--- Analise com Algoritmo KMP ---\n");
 
     for (int k = 0; k < n_palavras; k++) {
        
